@@ -71,7 +71,10 @@ RESPONSE: 200
 { 
   game: { id: 143, min: 2, max: 9, hearts: 3 }, 
   player: { secret: 'fc94a7e0-0be4-4e79-bead-ae68f9c95237'
-            action: 'placing' } 
+            action: 'playing' },
+  problems: [
+    { id: 1001, a: 5, b: 8, answer: 40, jackpot: 9, score: 4 }
+  ]
 }
 ```
 
