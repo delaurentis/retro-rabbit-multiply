@@ -1,0 +1,31 @@
+.Prompt {
+  margin-top: 1em;
+}
+
+.PromptTitle {
+  font-size: 1.75em;
+  height: 0.7em;
+}
+
+.PromptButton {
+  width: 18em;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.PromptParagraph {
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 1em;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .PromptParagraph {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-bottom: 0.9em;
+    margin-top: 0.9em;
+  }
+}

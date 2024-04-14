@@ -1,0 +1,18 @@
+.NumberPad {
+  display: block;
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
+@media only screen and (max-width: 480px) {
+  .NumberPad {
+    margin-top: 0em;
+    margin-left: 0em;
+  }
+}
+
+@media (hover: hover) {
+  .NumberPad {
+    display: none;
+  }
+}

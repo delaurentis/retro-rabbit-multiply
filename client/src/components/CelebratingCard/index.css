@@ -1,0 +1,13 @@
+.CelebratingConfetti {
+  position: absolute;
+  top: 0.75em;
+  left: 0.75em;
+  bottom: 0.75em;
+  right: 0.75em;
+  z-index: 9;
+}
+
+.CelebratingPrompt {
+  z-index: 10;
+  position: relative;
+}

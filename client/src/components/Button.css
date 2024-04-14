@@ -1,0 +1,21 @@
+.Button {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  margin-top: 1em;
+  height: 2em;
+  border: none; 
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+  padding-top: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.Button:hover {
+  background-color: #f14638;
+}
+

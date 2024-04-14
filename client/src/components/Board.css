@@ -1,0 +1,23 @@
+.Board {
+  display: inline-block;
+  background-color: black;
+  position: relative;
+  height: calc(48vw - 2em);
+  width: calc(48vw - 2em);
+  max-height: 32em;
+  max-width: 32em;
+  margin-top: 2em;
+  margin-left: 2em;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .Board {
+    display: none;
+    margin-left: 0em;
+    margin-top: 0em;
+    width: 100vw;
+    height: 100vw;
+  }
+}

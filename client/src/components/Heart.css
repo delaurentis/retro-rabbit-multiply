@@ -1,0 +1,16 @@
+.Heart {
+  display: inline-block;
+  background-image: url('../assets/images/heart.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.15em;
+  width: 1.5em;
+  height: 2em;
+  
+  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated; /* Chrome */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+}

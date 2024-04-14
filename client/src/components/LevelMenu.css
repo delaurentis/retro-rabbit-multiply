@@ -1,0 +1,14 @@
+.LevelMenu {
+  margin-left: 2em;
+  margin-top: 2em;
+  user-select: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .LevelMenu {
+    display: none;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-left: 2em;
+  }
+}

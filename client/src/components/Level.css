@@ -1,0 +1,11 @@
+.Level {
+  color: #777777;
+  display: inline-block;
+  padding-right: 2em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.Level[active='yes'] {
+  color: white;
+}

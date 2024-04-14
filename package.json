@@ -1,0 +1,99 @@
+{
+  "name": "retro-rabbit-multiply",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
+    "dexie": "^4.0.4",
+    "express": "^4.19.2",
+    "http-proxy-middleware": "^1.0.0",
+    "node-fetch": "^2.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sqlite-async": "^1.2.0",
+    "sqlite3": "^5.1.7",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
+    "@babel/preset-env": "^7.24.4",
+    "babel-jest": "^29.7.0",
+    "cross-fetch": "^4.0.0",
+    "react-scripts": "^5.0.1",
+    "serve": "^14.2.1",
+    "url-loader": "^4.1.1"
+  },
+  "overrides": {
+    "nth-check": "^2.0.1",
+    "postcss": "^8.4.5"
+  },
+  "scripts": {
+    "start": "npm run development",
+    "development": "NODE_ENV=development concurrently --kill-others \"npm run client\" \"npm run server\"",
+    "server": "node server/server.js",
+    "client": "cd client && npm install && npm start",
+    
+    "fullstack": "NODE_ENV=development concurrently --kill-others \"npm run fullstack-client\" \"npm run server\"",
+    "fullstack-client": "cd client && npm install && npm run fullstack",
+    
+    "production": "cd client && npm install && npm run build && cd .. && NODE_ENV=production npm run server",
+    "static": "cd client && npm install && npm run build && serve -s build",
+    "build": "react-scripts build",
+
+    "test": "jest --coverage --coverage-reporters=lcov",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3001",
+  "engines": {
+    "node": "18.x"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-modules-commonjs",
+      "@babel/plugin-transform-react-jsx",
+      "@babel/plugin-proposal-class-properties"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-runtime"
+        ]
+      }
+    }
+  },
+  "jest": {
+    "verbose": true,
+    "clearMocks": true,
+    "collectCoverage": true,
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "resolver": null
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "license": "MIT"
+}

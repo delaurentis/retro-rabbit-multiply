@@ -1,0 +1,53 @@
+.NumberButton {
+  display: inline-block;
+  width: auto;
+  height: calc(8vw - 2px);
+  padding-left: 1.585em;
+  padding-right: 1.585em;
+  background-color: #999999;
+  background-color: #eeeeee;
+
+  color: black;
+  border: 1px solid rgba(0,0,0,0.25);
+  user-select: none;
+}
+
+.NumberButtonLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1em;
+}
+
+.NumberButton[pressed='yes'] {
+  background-color: white;
+  background-color: #999999;
+
+}
+
+
+@media only screen and (max-width: 480px) {
+  .NumberButton {
+    width: calc(33vw - 1px);
+    height: calc(15vw - 1px);
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+  .NumberButton[mobile='hide'] {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 481px) {
+  .NumberButton {
+    max-width: 5em;
+    max-height: 5em;
+  }
+  .NumberButton[mobile='show'] {
+    display: none;
+  }
+}
+
+

@@ -1,0 +1,24 @@
+.ProblemAnswer {
+  display: inline-block;
+  overflow-y: hidden;
+  height: 1em;
+}
+
+.ProblemAnswerInput {
+  display: block;
+  width: 3em;
+  font-size: 1em;
+  background-color: clear;
+  background: none;
+  color: white;
+  border: 0;
+  outline: none;
+  height: 1em;
+}
+
+.ProblemAnswerFromPad {
+  display: block;
+  width: 3em;
+  color: white;
+  height: 1em;
+}

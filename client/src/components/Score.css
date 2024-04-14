@@ -1,0 +1,30 @@
+.Score {
+  position: absolute;
+  right: 0em;
+  bottom: 1em;
+  width: 6em;
+  text-align: right;
+}
+
+.ScoreReadout {
+  font-size: 1em;
+  color: white;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  line-height: 1.5em;
+  padding-right: 0.25em;
+}
+
+.ScoreSymbol {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 480px) {
+  .Score {
+    font-size: 1.25em;
+  }
+}
+
+

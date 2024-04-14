@@ -1,0 +1,27 @@
+.Jackpot {
+  text-align: left;
+  white-space: nowrap;
+  margin-bottom: 1em;
+  margin-top: 1.5em;
+}
+
+.JackpotLabel {
+  display: inline-block;
+  margin-right: 1em;
+  font-size: 1em;
+  line-height: 2em;
+  vertical-align: bottom;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .JackpotLabel {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .JackpotLabel {
+     font-size: 1.1em;
+  }
+}

@@ -1,0 +1,30 @@
+.ProblemContainer {
+  margin-top: 2.5em;
+  margin-bottom: 0.75em;
+  text-align: left;
+}
+
+.Problem {
+  font-size: 2.25em;
+  white-space: nowrap;
+}
+
+.Problem * {
+  margin-right: 0.7em;
+}
+
+@media screen and (max-width: 1024px) {
+  .Problem {
+     font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Problem {
+     font-size: 2.5em;
+  }
+  .ProblemContainer {
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+  }
+}
